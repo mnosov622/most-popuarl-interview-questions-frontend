@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>HTML Questions</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+			.question {
+				margin: 10px 0;
+			}
+			.question button {
+				cursor: pointer;
+				background-color: #f9f9f9;
+				border: 1px solid #ccc;
+				padding: 10px;
+				text-align: left;
+				width: 100%;
+				outline: none;
+			}
+			.question button:after {
+				content: '\25BC';
+				float: right;
+			}
+			.question button.active:after {
+				content: '\25B2';
+			}
+			.answer {
+				display: none;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-top: none;
+				background-color: #f9f9f9;
+			}
+			pre {
+				background-color: #f4f4f4;
+				padding: 10px;
+				border: 1px solid #ddd;
+				overflow-x: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>HTML, CSS, and JavaScript Questions</h1>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">1. What is HTML?</button>
+			<div class="answer">
+				HTML (HyperText Markup Language) is the standard markup language for creating web pages. It
+				describes the structure of a webpage and consists of a series of elements which tell the
+				browser how to display content.
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">2. What are Semantic elements in HTML?</button>
+			<div class="answer">
+				Semantic elements clearly describe their meaning in a human- and machine-readable way.
+				Examples include &lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;header&gt;, and
+				&lt;footer&gt;.
+				<pre><code>&lt;article&gt;
+  &lt;h2&gt;Article Title&lt;/h2&gt;
+  &lt;p&gt;Article content...&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;section&gt;
+  &lt;h2&gt;Section Title&lt;/h2&gt;
+  &lt;p&gt;Section content...&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">3. What are the Empty elements in HTML?</button>
+			<div class="answer">
+				Empty elements do not have any content. Examples include &lt;br&gt;, &lt;hr&gt;, and
+				&lt;img&gt;.
+				<pre><code>&lt;br&gt;  &lt;!-- Line break --&gt;
+&lt;hr&gt;  &lt;!-- Horizontal rule --&gt;
+&lt;img src="image.jpg" alt="Description"&gt;  &lt;!-- Image --&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				4. Differentiate between the Inline and the Block elements in HTML.
+			</button>
+			<div class="answer">
+				Block elements start on a new line and take up the full width available, e.g., &lt;div&gt;,
+				&lt;p&gt;. Inline elements do not start on a new line and only take up as much width as
+				necessary, e.g., &lt;span&gt;, &lt;a&gt;.
+				<pre><code>&lt;div&gt;This is a block element.&lt;/div&gt;
+&lt;p&gt;This is another block element.&lt;/p&gt;
+
+&lt;span&gt;This is an inline element.&lt;/span&gt;
+&lt;a href="#"&gt;This is another inline element.&lt;/a&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				5. What is list in HTML? Explain different types of list available in HTML.
+			</button>
+			<div class="answer">
+				Lists in HTML are used to group related items. Types of lists include ordered lists
+				(&lt;ol&gt;), unordered lists (&lt;ul&gt;), and definition lists (&lt;dl&gt;).
+				<pre><code>&lt;ul&gt;
+  &lt;li&gt;Unordered list item&lt;/li&gt;
+  &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ordered list item&lt;/li&gt;
+  &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Term&lt;/dt&gt;
+  &lt;dd&gt;Definition of the term&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				6. What is the basic structure of an HTML document?
+			</button>
+			<div class="answer">
+				The basic structure of an HTML document includes: &lt;!DOCTYPE html&gt;, &lt;html&gt;,
+				&lt;head&gt;, &lt;title&gt;, &lt;meta&gt;, &lt;body&gt;.
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				7. Explain the elements used in the basic structure of an HTML document.
+			</button>
+			<div class="answer">
+				&lt;!DOCTYPE html&gt;: Defines the document type. <br />
+				&lt;html&gt;: Root element. <br />
+				&lt;head&gt;: Contains meta-information. <br />
+				&lt;title&gt;: Specifies the title. <br />
+				&lt;meta&gt;: Provides metadata. <br />
+				&lt;body&gt;: Contains the content.
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				10. What is the difference between the &lt;div&gt; and &lt;span&gt; tag in HTML?
+			</button>
+			<div class="answer">
+				&lt;div&gt; is a block-level element used for structuring content, while &lt;span&gt; is an
+				inline element used for styling specific parts of text.
+				<pre><code>&lt;div&gt;This is a block element.&lt;/div&gt;
+&lt;span&gt;This is an inline element.&lt;/span&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				13. Differentiate between the GET and the POST methods in HTML forms.
+			</button>
+			<div class="answer">
+				GET appends form data to the URL, making it visible in the address bar, while POST sends
+				form data as a request body, keeping it hidden.
+				<pre><code>&lt;form method="GET" action="example.com"&gt;
+  &lt;input type="text" name="username"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;form method="POST" action="example.com"&gt;
+  &lt;input type="text" name="username"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">14. What is the use of the &lt;iframe&gt; tag?</button>
+			<div class="answer">
+				The &lt;iframe&gt; tag is used to embed another HTML document within the current document.
+				<pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;
+  &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;
+&lt;/iframe&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">16. What is localStorage?</button>
+			<div class="answer">
+				localStorage allows you to store data locally within the user's browser with no expiration
+				date.
+				<pre><code>localStorage.setItem('key', 'value');
+var value = localStorage.getItem('key');</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">17. What is sessionStorage?</button>
+			<div class="answer">
+				sessionStorage allows you to store data for the duration of the page session.
+				<pre><code>sessionStorage.setItem('key', 'value');
+var value = sessionStorage.getItem('key');</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				18. Differentiate between localStorage and sessionStorage.
+			</button>
+			<div class="answer">
+				localStorage persists data until explicitly deleted. sessionStorage only lasts for the
+				duration of the page session.
+				<pre><code>localStorage.setItem('key', 'value'); // persists
+sessionStorage.setItem('key', 'value'); // lasts until tab is closed</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				27. What is the difference between visibility: hidden and display: none properties in CSS?
+			</button>
+			<div class="answer">
+				visibility: hidden hides an element but still takes up space. display: none removes the
+				element from the document flow.
+				<pre><code>.hidden {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">29. Explain box-model in CSS.</button>
+			<div class="answer">
+				The box model in CSS consists of margins, borders, padding, and the actual content.
+				<pre><code>element {
+  width: 100px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px;
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				30. What is the purpose of z-index property in CSS?
+			</button>
+			<div class="answer">
+				The z-index property specifies the stack order of elements. Higher values are in front of
+				lower values.
+				<pre><code>.element {
+  position: absolute;
+  z-index: 10;
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">35. Why is the ‘!important’ used in CSS?</button>
+			<div class="answer">
+				The ‘!important’ rule in CSS is used to override other styling rules. However, it should be
+				used sparingly as it can make the CSS harder to maintain.
+				<pre><code>.example {
+  color: red !important;
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">42. How to create responsive designs?</button>
+			<div class="answer">
+				Responsive designs can be created using media queries, flexible grid layouts, and responsive
+				images.
+				<pre><code>@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				What is the purpose of ‘box-sizing’ property in CSS?
+			</button>
+			<div class="answer">
+				The ‘box-sizing’ property in CSS defines how the width and height of an element are
+				calculated: whether they include padding and borders or not.
+				<pre><code>.example {
+  box-sizing: border-box;
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				44. What is the difference between == and === in JavaScript?
+			</button>
+			<div class="answer">
+				== checks for equality with type conversion, while === checks for equality without type
+				conversion.
+				<pre><code>console.log(1 == '1'); // true
+console.log(1 === '1'); // false</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				50. Difference between null and undefined in JavaScript?
+			</button>
+			<div class="answer">
+				null is an assignment value indicating no value. undefined means a variable has been
+				declared but not assigned a value.
+				<pre><code>let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">Explain hoisting in JavaScript?</button>
+			<div class="answer">
+				Hoisting is JavaScript's default behavior of moving declarations to the top of the current
+				scope.
+				<pre><code>console.log(x); // undefined
+var x = 5;
+
+hoisted(); // Works because function declarations are hoisted
+function hoisted() {
+  console.log('This function is hoisted');
+}</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">54. What are different Data types in JavaScript?</button>
+			<div class="answer">
+				JavaScript data types include: Number, String, Boolean, Object, Undefined, Null, Symbol, and
+				BigInt.
+				<pre><code>let number = 42; // Number
+let string = "Hello"; // String
+let bool = true; // Boolean
+let obj = { key: "value" }; // Object
+let undef; // Undefined
+let empty = null; // Null
+let sym = Symbol("symbol"); // Symbol
+let bigInt = 9007199254740991n; // BigInt</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">67. Explain Promises in JavaScript.</button>
+			<div class="answer">
+				Promises in JavaScript represent the eventual completion (or failure) of an asynchronous
+				operation and its resulting value. A promise is an assurance or guarantee that something
+				will happen in the future. A person can promise another person a specific outcome or result.
+				Promises are not limited to individuals, governments and organizations can also make
+				promises.
+				<br />
+				<br />
+				You have probably made a promise before. In JavaScript, a Promise is an object that will
+				produce a single value some time in the future.
+				<br />
+				<br />
+
+				If the promise is successful, it will produce a resolved value, but if something goes wrong
+				then it will produce a reason why the promise failed. The possible outcomes here are similar
+				to that of promises in real life. JavaScript promises can be in one of three possible
+				states.
+				<br />
+				<br />
+
+				These states indicate the progress of the promise. They are: pending: This is the default
+				state of a defined promise fulfilled: This is the state of a successful promise rejected:
+				This is the state of a failed promise
+
+				<pre><code>let promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("done!"), 1000);
+});
+
+promise.then(
+  result => console.log(result), // "done!"
+  error => console.log(error)
+);</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">
+				68. What is the use of async await in JavaScript?
+			</button>
+			<div class="answer">
+				async and await in JavaScript are used to handle asynchronous operations in a cleaner, more
+				readable way than using Promises alone.
+				<pre><code>async function fetchData() {
+  let response = await fetch('https://api.example.com/data');
+  let data = await response.json();
+  console.log(data);
+}
+
+fetchData();</code></pre>
+			</div>
+		</div>
+
+		<div class="question">
+			<button onclick="toggleAnswer(this)">71. Explain try catch block in JavaScript.</button>
+			<div class="answer">
+				A try-catch block in JavaScript is used to handle exceptions. Code within try runs, and if
+				an error occurs, execution jumps to the catch block.
+				<pre><code>try {
+  let result = riskyOperation();
+} catch (error) {
+  console.log(error);
+}</code></pre>
+			</div>
+		</div>
+
+		<script>
+			function toggleAnswer(button) {
+				button.classList.toggle('active');
+				var answer = button.nextElementSibling;
+				if (answer.style.display === 'block') {
+					answer.style.display = 'none';
+				} else {
+					answer.style.display = 'block';
+				}
+			}
+		</script>
+	</body>
+</html>
